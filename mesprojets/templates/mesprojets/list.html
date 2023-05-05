@@ -1,0 +1,64 @@
+{% extends 'base_template.html' %}
+
+{% load static  %}
+{% block titre %} Page d'Accueil  {% endblock %}
+
+{% block titre2 %} <link rel="stylesheet" href="{% static 'list.css' %}"> {% endblock %}
+
+
+{% block contenu %}
+<header>
+    <h1>My Projects</h1>
+    <div class="test">
+        <img src="{% static 'image1.jpg' %}" alt="Image">
+        <p>Christophe Ellis</p>
+        </div>
+</header>
+
+<section>
+	<div class="Projet1">
+		<div class="text">
+			<h2>Simulator project at CNR</h2>
+            <h3>Presentation</h3>
+            <br>
+			<p>As part of my cycle of alternating INSA engineer within the CNR (Compagnie Nationale du Rhône), my mission is to carry out a project each year based on the same subject, the «hydroelectric group simulator». I carry out this project from A to Z with the help of my business tutor and the team of technicians CEMMII of Haut-Rhône. Each year the project evolves to finally develop the simulator with all the controller technologies that the CNR park has.</p>
+            <br>
+            <h3>Background</h3> 
+            <br>
+			<p>Developed since 2012 by trainees/engineers, the turbo-generator simulator aims to reproduce the electromechanical characteristics of the generator and turbine when interfaced to the main control equipment (RGU voltage regulators/RGN speed regulators).  
+            </p>
+            <br>
+            <div class="text">
+                <img src="{% static 'Capturesimu.png' %}" alt="image 9">
+            </div>
+            <br>
+            <p>Physically, it is a cabinet that can be connected to electrical equipment and controls the control and control functions of a production unit. 
+                Several projects on this subject are developed in the rest of the document, listing the skills acquired.
+                </p>
+		</div>
+
+        <div class="Projet2">
+            <div class="text">
+                <h2>Robotic project</h2>
+                <p>As part of my training my project tutored over 2 years, I was to participate in the Cachan robotics cup with the RCT (Robot club Toulon). It was necessary to create a robot from A to Z allowing to recover and to send tennis balls in the field of the opposing team as quickly as possible. The balls were randomly distributed on the field at the beginning of the match between the 2 robots which lasted 90 seconds. 
+                    Initially, we had to create the control board of our robot from A to Z, test it by programming the microcontroller, design the mechanical structure for our robot, add an onboard PC to perform all the calculations and trajectory tracking algorithms.
+                </p>
+                <p>&nbsp;</p>
+
+                <div class="text">
+                    <img src="{% static 'Image8.png' %}" alt="image 8">
+                </div>
+            </div>
+	</div>
+</section> 
+   
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+    
+<footer>
+    <p>©Christophe Ellis 2023</p>
+</footer>
+ {% endblock %}
